@@ -1,0 +1,242 @@
+/* App Wrapper */
+.app-wrapper {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7fafc;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* Banner */
+.home-banner {
+  background: linear-gradient(90deg, #4f8cff 0%, #38c6ff 100%);
+  color: #fff;
+  padding: 48px 0 32px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.home-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+.home-banner p {
+  font-size: 1.2rem;
+}
+
+/* Giới thiệu */
+.home-intro {
+  max-width: 700px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 32px 24px;
+  text-align: center;
+}
+.home-intro h2 {
+  color: #2d7ff9;
+  margin-bottom: 10px;
+}
+.home-intro p {
+  color: #444;
+}
+
+/* Danh sách chiến dịch */
+.home-campaigns {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 0 16px;
+}
+.home-campaigns h2 {
+  color: #2d7ff9;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.campaign-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.campaign-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 24px 20px;
+  width: 270px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.campaign-item h3 {
+  color: #1a5fd6;
+  margin-bottom: 8px;
+}
+.campaign-item p {
+  color: #555;
+  margin-bottom: 16px;
+}
+.donate-btn {
+  background: linear-gradient(90deg, #38c6ff 0%, #4f8cff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(56, 198, 255, 0.12);
+}
+.donate-btn:hover {
+  background: linear-gradient(90deg, #4f8cff 0%, #38c6ff 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Footer */
+.home-footer {
+  background: #eaf2fb;
+  color: #2d7ff9;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 48px;
+  font-size: 1rem;
+  border-top: 1px solid #dbeafe;
+}
+
+@media (max-width: 900px) {
+  .campaign-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .campaign-item {
+    width: 90%;
+    margin-bottom: 18px;
+  }
+}
+/* Auction page styles */
+
+body {
+  background: #f3f6fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auction-container {
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0, 0, 0, 0.1);
+  padding: 36px 32px 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auction-container h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-info {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.product-info img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+.product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.product-info p {
+  color: #555;
+  font-size: 1rem;
+}
+
+.bid-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.bid-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-size: 1rem;
+  background: #f7f9fc;
+  transition: border 0.2s;
+}
+.bid-form input:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+}
+.bid-form button {
+  background: linear-gradient(90deg, #1976d2 60%, #2196f3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+  transition: background 0.2s;
+}
+.bid-form button:hover {
+  background: linear-gradient(90deg, #1565c0 60%, #1976d2 100%);
+}
+
+.highest-bid {
+  margin-bottom: 10px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.bid-list {
+  background: #f4f7fa;
+  border-radius: 12px;
+  padding: 16px 14px;
+  margin-top: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+.bid-list h4 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.bid-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.bid-list li {
+  padding: 7px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bid-list li:last-child {
+  border-bottom: none;
+}
